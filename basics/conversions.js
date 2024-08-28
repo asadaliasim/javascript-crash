@@ -11,8 +11,31 @@ let valueInNumber = Number(score);
 
 let isLoggedIn = 0;
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
 
 // 1 => true, 0 => flase
 // "" => false
 // "anyValue" => true
+
+// ***********operations***************
+
+// let value = 3;
+// let negValue = -value;
+// console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 2);
+// console.log(2 ** 2);
+// console.log(2 / 2);
+// console.log(2 % 2);
+
+let str1 = 'Hello';
+let str2 = ' Asad';
+
+let str3 = str1 + str2;
+// console.log(str3);
+
+let x = 2;
+let y = x++;
+let z = ++x;
+// operators behave differently when placed prefix and postfix
+// console.log(x, y, z);
