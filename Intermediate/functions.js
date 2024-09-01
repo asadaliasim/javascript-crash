@@ -19,12 +19,13 @@ const result = addTwoNumbers(1, 2);
 
 // console.log(result);
 
-function loginMessage(username) {
+// default values
+function loginMessage(username = 'Asad') {
   if (!username) {
     return `Enter username`;
   }
   return `${username} logged In`;
 }
 
-const res = loginMessage('');
+const res = loginMessage();
 console.log(res);
