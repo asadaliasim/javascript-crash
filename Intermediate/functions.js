@@ -28,4 +28,31 @@ function loginMessage(username = 'Asad') {
 }
 
 const res = loginMessage();
-console.log(res);
+// console.log(res);
+
+// to handle unkwown parameters
+
+function calculateCartPrice(...args) {
+  return args;
+}
+
+// console.log(calculateCartPrice(2, 3, 4, 2));
+
+const user = {
+  uName: 'asad',
+  age: 22,
+};
+
+function handleObj(anyObj) {
+  console.log(`username is ${anyObj.uName} and age is ${anyObj.age}`);
+}
+
+// handleObj(user);
+
+const newArr = [200, 300, 500];
+
+function handleArr(anyArr) {
+  return anyArr[1];
+}
+
+console.log(handleArr(newArr));
