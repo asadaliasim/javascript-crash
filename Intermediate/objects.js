@@ -63,3 +63,23 @@ const obj2 = { 3: 'c', 4: 'e' };
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// object destrcutring
+
+const course = {
+  cousrName: 'JS',
+  price: 1000,
+  courseInstructor: 'Asad',
+};
+
+const { cousrName, price, courseInstructor: instuctor } = course;
+
+console.log(instuctor);
+
+// JSON js object notation
+// data from api
+// {
+//   "name":"asad",
+//   "courseName":"js in hind",
+//   "price": "free"
+// }
