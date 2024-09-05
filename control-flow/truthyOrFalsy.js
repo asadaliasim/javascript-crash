@@ -28,4 +28,10 @@ let val1;
 // val1 = undefined ?? 9;
 
 val1 = null ?? 10 ?? 16;
-console.log(val1);
+// console.log(val1);
+
+// ternery operator
+// condition ? true: false
+
+const iceTeaPrice = 100;
+iceTeaPrice <= 80 ? console.log('less') : console.log('more');
