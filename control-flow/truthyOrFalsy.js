@@ -25,6 +25,7 @@ let val1;
 // val1 = 5 ?? 10;
 // val1 = null ?? 8;
 
-val1 = undefined ?? 9;
+// val1 = undefined ?? 9;
 
+val1 = null ?? 10 ?? 16;
 console.log(val1);
