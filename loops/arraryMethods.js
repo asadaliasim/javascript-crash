@@ -67,10 +67,28 @@ const myNum = [1, 2, 3, 4, 5, 6];
 //   .filter((num) => num >= 6);
 // console.log(newNums);
 
-const sumWithInital = myNum.reduce((acc, curVal) => {
-  // for test
-  console.log(`value of acc is ${acc} and current is ${curVal}`);
+// const sumWithInital = myNum.reduce((acc, curVal) => {
+//   // for test
+//   console.log(`value of acc is ${acc} and current is ${curVal}`);
 
-  return acc + curVal;
-}, 0);
-console.log(sumWithInital);
+//   return acc + curVal;
+// }, 0);
+// console.log(sumWithInital);
+// use case
+const cart = [
+  {
+    itemName: 'js',
+    price: 900,
+  },
+  {
+    itemName: 'py',
+    price: 800,
+  },
+  {
+    itemName: 'php',
+    price: 700,
+  },
+];
+
+const total = cart.reduce((acc, item) => acc + item.price, 0);
+console.log(total);
