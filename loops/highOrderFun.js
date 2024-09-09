@@ -83,6 +83,14 @@ const myCoding = [
   },
 ];
 
-myCoding.forEach((item) => {
-  console.log(item.languageName);
+// myCoding.forEach((item) => {
+//   console.log(item.languageName);
+// });
+
+// cant do like this
+const values = coding.forEach((item) => {
+  console.log(item);
+  return item;
 });
+
+console.log(values);
