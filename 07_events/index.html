@@ -68,16 +68,40 @@
     //  jquery -on event listener
 
     // 3
-    document.getElementById('owl').addEventListener(
-      'click',
-      (e) => {
-        console.log(e);
-      },
-      false
-    ); //false is default
+    // document.getElementById('images').addEventListener(
+    //   'click',
+    //   (e) => {
+    //     console.log('clicked inside ul');
+    //   },
+    //   false
+    // );
+    // document.getElementById('owl').addEventListener(
+    //   'click',
+    //   (e) => {
+    //     console.log('clicked on owl');
+    //     e.stopPropagation();
+    //   },
+    //   false
+    // );
+
+    // document.getElementById('google').addEventListener('click', (e) => {
+    //   console.log(`clicked on google`);
+    //   e.stopPropagation();
+    //   e.preventDefault();
+    // });
+
+    //false is default ---> even bubling, true --> event capturing
 
     // type, timestamp, default behaviour, target, toElement, srcElement, currentTarget
     // clientX,Y, screenX,Y
     // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', (e) => {
+      if (e.target.tagName === 'IMG') {
+        let toRemove = e.target.parentNode;
+        // toRemove.remove();
+        toRemove.parentNode.removeChild(toRemove);
+      }
+    });
   </script>
 </html>
