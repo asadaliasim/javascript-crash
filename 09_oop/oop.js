@@ -31,6 +31,7 @@ function User(username, isLoggedIn) {
 // const userOne = User('Asad', true);
 // const userTwo = User('Ali', false);
 
+// new key word will be new instancae of object
 const userOne = new User('Asad', true);
 const userTwo = new User('Ali', false);
 
