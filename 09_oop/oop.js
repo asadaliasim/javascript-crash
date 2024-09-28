@@ -35,4 +35,4 @@ function User(username, isLoggedIn) {
 const userOne = new User('Asad', true);
 const userTwo = new User('Ali', false);
 
-console.log(userOne);
+// console.log(userOne);
