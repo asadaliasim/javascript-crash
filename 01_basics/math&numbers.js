@@ -38,4 +38,10 @@ function generateOTP() {
   return otp;
 }
 
-console.log(generateOTP());
+// console.log(generateOTP());
+
+let otp = Math.random();
+otp = otp * 900000;
+otp = otp + 100000;
+otp = Math.floor(otp);
+console.log(otp);

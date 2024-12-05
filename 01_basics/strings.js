@@ -10,7 +10,9 @@ const repoCount = 50;
 // console.log(`User ${name} has ${repoCount} repos`);
 
 // another way to declare string
-const gameName = new String('asad-asim');
+// const gameName = new String('asad-asim');
+const gameName = 'asad-asim';
+
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
 // console.log(gameName.length);
@@ -33,7 +35,7 @@ let url = 'https://asad.com/asad%20asim';
 
 // console.log(url.includes('asad'));
 
-console.log(gameName.split('-'));
+// console.log(gameName.split('-'));
 
 // console.log(name[0]);
 // console.log(name.__proto__);

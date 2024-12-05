@@ -15,6 +15,7 @@ const anotherId = Symbol('123');
 // console.log(id === anotherId);
 
 const bigNumber = 5453453123123123453453n; // add n at the end to specifically declare bigNumber
+console.log(typeof bigNumber);
 
 // 2. Non Primitive =>(Reference)
 // Array, Objects, Functions
@@ -31,4 +32,5 @@ const myFun = function () {
 };
 
 // to check the type of any
-console.log(typeof data);
+// console.log(typeof data);
+// console.log(myFun());
